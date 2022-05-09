@@ -1,4 +1,6 @@
-<p>{{'welcomeMessage' | translate: user}}</p>
+<!-- <p>{{'welcomeMessage' | translate: user}}</p> -->
+
+<p translate [translateParams]="{firstName: user.firstName}">welcomeMessage</p>
 
 <label translate="login.username"></label>
 
