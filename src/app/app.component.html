@@ -1,3 +1,23 @@
 <div class="container my-2">
+  <div class="row">
+    <div class="col-lg-3 offset-lg-9">
+      <div class="input-group">
+        <span class="input-group-text">
+          Language:
+        </span>
+        <select class="form-control" [(ngModel)]="currentLanguage" (ngModelChange)="changeLanguage()">
+          <option *ngFor="let language of languageOptions" [value]="language.code">
+            {{language.name}}
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <p>Current Language: {{currentLanguage}}</p>
+
+  <hr/>
+
   <app-layout></app-layout>
 </div>
+

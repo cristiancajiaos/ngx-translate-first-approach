@@ -24,7 +24,7 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit(): void {
     this.user = {
-      firstName: 'John',
+      firstName:'John',
       lastName:'Doe'
     };
 
